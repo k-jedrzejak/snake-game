@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+#canvas {
+    background: #3b2612;
+    box-shadow: 
+        inset 1px 1px 1px #27190c,
+        inset -1px -1px 1px #27190c;
+}
+
+#game-board{
+    opacity: .3;
+}
+
+#game-over {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.alert {
+    color: red;
+    font-size: 3rem;
+    text-shadow: 
+        1px 1px 1px brown,
+        1px 2px 1px brown, 
+        2px 0px 1px brown, 
+        0 0 1px black;
+}
+
+.btn {
+    margin: 40px;
+    text-transform: uppercase;
+    background: #00cc66;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #29a329;
+    outline: none;
+}
+
+.btn:active, .lvl-btn:active {
+    outline: none;
+}
+
+.score-box {
+    padding: 40px 0 10px;
+}
+
+.score {
+    font-size: 2rem;
+    margin: 0 0 0 10px;
+}
+
+.lvl-box {
+    text-transform: capitalize;;
+    margin: 0 0 20px 0;
+    font-size: 0.8rem;
+}
+
+#game-lvl {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    z-index:2;
+}  
+
+.lvl-btn {
+    margin: 40px 0;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.beg {
+    background: #00cc66;
+}
+
+.beg:hover {
+    background: #29a329;
+    outline: none;
+}
+
+.int {
+    background: #ffb366;
+}
+
+.int:hover {
+    background: #ff8c1a;
+    outline: none;
+}
+
+.adv {
+    background: #ff471a;
+}
+.adv:hover {
+    background: #e60000;
+    outline: none;
+}
+
+
+@media (max-width: 576px) {
+    #canvas {
+        width: 100%;
+    }
+
+    .lvl-btn {
+        margin: 10px 0;
+    }
+
+    .beg {
+        margin: 40px 0 10px;
+    }
+}

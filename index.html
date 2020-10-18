@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <title>Warm game</title>
+</head>
+<body>
+    <div id="game-lvl">
+        Chose Your level
+        <form>
+            <button type="button" value="500" name="beginner" class="lvl-btn beg">beginner</button>
+            <button type="button" value="300" name="intermediate" class="lvl-btn int">intermediate</button>
+            <button type="button" value="100" name="advanced" class="lvl-btn adv">advanced</button>
+        </form>
+
+    </div>
+
+    <div id="game-board">
+        <div class="score-box">Your score: <span class="score">0</span></div>
+        <div class="lvl-box"></div>
+        <canvas id="canvas" width="608" height="544"></canvas>
+    </div>
+
+    <div id="game-over">
+        <div class="alert">GAME OVER!</div>
+        <div class="subalert"></div>
+        <div>
+            <form>
+                <button type="submit" class="btn">play again</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
